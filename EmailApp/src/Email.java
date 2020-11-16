@@ -1,7 +1,6 @@
 import java.util.Scanner;
-import java.util.UUID;
 
-public class Email<passwordLength> {
+public class Email {
 
     private String lastName;
     private String firstName;
@@ -13,12 +12,6 @@ public class Email<passwordLength> {
     int passwordLength = 10;
     private String companyName = "google.com";
 
-    //task to be done
-    //ask for department
-    //constructor for setting firstname and lastname
-    //generate random password
-    //set mailboxCapacity
-    //change the password
 
     Email(String firstName, String lastName) {
         this.lastName = lastName;
@@ -58,8 +51,6 @@ public class Email<passwordLength> {
             int random = (int) Math.random() * passwordSet.length();
             password[i] = passwordSet.charAt(random);
         }
-
-        // System.out.println("Password generated"+ password.toString());
         return password.toString();
     }
 
